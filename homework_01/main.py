@@ -41,7 +41,7 @@ def is_prime(number_):
     for i in range(2, number_ // 2+1):
         if (number_ % i == 0):
             k = k+1
-    if (k <= 0):
+    if (k <= 0) and not number_ ==0 and not number_ == 1:
         return True
     else:
         return False
@@ -79,5 +79,9 @@ def filter_numbers(numbers_, filter_type):
 
 
 if __name__ == "__main__":
-    filter_numbers([1, 2, 3], ODD)
-    filter_numbers([2, 3, 4, 5], EVEN)
+    filter_numbers([1,2,3,4,5,6,7,8,9], ODD)
+    filter_numbers([2,3,4,5,6,7,8,9,10], EVEN)
+    filter_numbers([0,1,2,3,4,5,6,7,8,9,10,11], PRIME)
+    # [1,3,5,7,9]),
+    # [2,4,6,8,10]),
+    # [2,3,5,7,11])
