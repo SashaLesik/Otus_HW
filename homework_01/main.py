@@ -79,5 +79,5 @@ def filter_numbers(numbers_, filter_type):
 
 
 if __name__ == "__main__":
-    filter_numbers([1, 2, 3], filter_type=ODD)
+    filter_numbers([1, 2, 3], ODD)
     filter_numbers([2, 3, 4, 5], EVEN)
