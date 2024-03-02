@@ -13,7 +13,7 @@ def power_numbers(*numbers):
     """
     result = [n**2 for n in numbers]
 
-    print(result)
+    return result
 
 
 # filter types
@@ -61,18 +61,18 @@ def filter_numbers(numbers_, filter_type):
     numbers = list(numbers_)
     if filter_type == ODD:
         result_filter = filter(filter_odd_numbers, numbers)
-        print(list(result_filter))
+        return list(result_filter)
         
     elif filter_type == EVEN:
         result_filter = filter(filter_even_numbers, numbers)
-        print(list(result_filter))
+        return list(result_filter)
 
     elif filter_type == PRIME:
         result_filter = filter(is_prime, numbers)
-        print(list(result_filter))
+        return list(result_filter)
     
     else:
-        print("no such filter")
+        return ("no such filter")
 
     
 
