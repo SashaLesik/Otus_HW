@@ -23,7 +23,10 @@ class Vehicle(ABC):
             self.started is True
 
     def move(self, distance):
-        if self.fuel_consumption <= distance/self.fuel:
+        if self.fuel == 0:
+            raise exceptions.NotEnoughFuel
+
+        elif self.fuel_consumption <= distance/self.fuel:
             fuel_left = self.fuel - (distance/self.fuel)
             return fuel_left
         else:
