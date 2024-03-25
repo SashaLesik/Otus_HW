@@ -11,10 +11,8 @@ from .engine import Engine
 
 
 
-
-
 class Car(Vehicle):
-    def __init__(self, engine, weight= 500, started= False, fuel= 100,
+    def __init__(self, engine, weight=500, started=False, fuel=100,
                  fuel_consumption=20):
         self.engine = engine
         super().__init__(weight, started, fuel, fuel_consumption)

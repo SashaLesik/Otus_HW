@@ -22,7 +22,7 @@ class Vehicle(ABC):
         else:
             self.started is True
 
-    def move(self, distance):
+    def move(self, distance=100):
         if self.fuel == 0:
             raise exceptions.NotEnoughFuel
 
