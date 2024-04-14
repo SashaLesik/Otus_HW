@@ -1,6 +1,6 @@
 
-from .base import Vehicle
-from .engine import Engine
+from base import Vehicle
+from engine import Engine
 
 """
 создайте класс `Car`, наследник `Vehicle`.
