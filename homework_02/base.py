@@ -30,6 +30,3 @@ class Vehicle(ABC):
             return fuel_left
         else:
             raise exceptions.NotEnoughFuel
-        
-start(False)
-
